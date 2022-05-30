@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block title %}
-Главная страница
+Список курсов
 {% endblock %}
 {% block style %}
 	{% include "inc-style.html" %}
@@ -9,16 +9,20 @@
 	{% include "inc-menu.html" %}
 {% endblock %}
 {% block body %}
-	<div>
-		<a href="/create-category/">Создать новую категорию</a>
-	</div>
-	<div>
-		<h1>Список существующих категорий</h1>
+    <a href="/">назад</a>
+
+    <h1>Список категорий</h1>
+    <ul>
+
         {% for item in objects_list %}
         <li>
             {{item.name}} <span>Количество курсов: {{item.course_count()}}</span>
-			<a href="/courses-list/?id={{item.id}}">Показать курсы</a>
         </li>
         {% endfor %}
+    </ul>
+
+	<div>
+		<li><a href="/courses-list/">Список курсов</a></li>
+		<li><a href="/create-course/">Создать курс</a></li>
 	</div>
 {% endblock %}

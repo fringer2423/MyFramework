@@ -13,6 +13,9 @@
 ###### fringer_framework/framework_requests.py
 Обеспечивает обработку GET и POST запросов
 ***
+###### components/models.py
+Классы-модели
+***
 ###### templates/*
 Каталог шаблонов
 ***
