@@ -25,8 +25,17 @@
 ###### components/unit_of_work.py
 Архитектурный системный паттерн - UnitOfWork
 ***
+###### components/content_types.py
+Словарь с content type
+***
+###### components/settings.py
+Настройки фреймворка
+***
 ###### templates/*
 Каталог шаблонов
+***
+###### staticfiles/*
+Каталог static файлов
 ***
 ###### run.py
 Обеспечивает запуск фреймворка

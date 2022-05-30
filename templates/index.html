@@ -2,36 +2,34 @@
 {% block title %}
 Главная страница
 {% endblock %}
-{% block style %}
-	{% include "inc-style.html" %}
-{% endblock %}
 {% block menu %}
-	{% include "inc-menu.html" %}
+{% include "inc-menu.html" %}
 {% endblock %}
 {% block body %}
-	<div>
-		<a href="/create-category/">Создать новую категорию</a>
-	</div>
-	<div>
-		<h1>Список существующих категорий</h1>
-        {% for item in objects_list %}
-        <li>
-            {{item.name}} <span>Количество курсов: {{item.course_count()}}</span>
-			<a href="/courses-list/?id={{item.id}}">Показать курсы</a>
-        </li>
-        {% endfor %}
-		<br>
-		<hr>
-	</div>
-	<div>
-		<li>
-			<a href="/student-list/">Список студентов</a>
-		</li>
-		<li>
-			<a href="/create-student/">Создать студента</a>
-		</li>
-		<li>
-			<a href="/add-student/">Добавить студента на курс</a>
-		</li>
-	</div>
+<p><img src="{{ static }}images/chef-3.jpg" alt="какой-то текст"></p>
+<div>
+    <a href="/create-category/">Создать новую категорию</a>
+</div>
+<div>
+    <h1>Список существующих категорий</h1>
+    {% for item in objects_list %}
+    <li>
+        {{item.name}} <span>Количество курсов: {{item.course_count()}}</span>
+        <a href="/courses-list/?id={{item.id}}">Показать курсы</a>
+    </li>
+    {% endfor %}
+    <br>
+    <hr>
+</div>
+<div>
+    <li>
+        <a href="/student-list/">Список студентов</a>
+    </li>
+    <li>
+        <a href="/create-student/">Создать студента</a>
+    </li>
+    <li>
+        <a href="/add-student/">Добавить студента на курс</a>
+    </li>
+</div>
 {% endblock %}
