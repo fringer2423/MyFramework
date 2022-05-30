@@ -1,5 +1,5 @@
 import quopri
-from .framework_requests import GetRequests, PostRequests
+from fringer_framework.framework_requests import GetRequests, PostRequests
 
 
 class PageNotFound404:
@@ -8,7 +8,6 @@ class PageNotFound404:
 
 
 class Framework:
-
     """Класс Framework - основа WSGI-фреймворка"""
 
     def __init__(self, routes_obj):
