@@ -1,0 +1,3 @@
+# MyFramework
+
+Мой WSGI framework
