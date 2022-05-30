@@ -10,6 +10,9 @@
 ###### fringer_framework/templator.py
 Обеспечивает рендеринг шаблонов
 ***
+###### fringer_framework/framework_requests.py
+Обеспечивает обработку GET и POST запросов
+***
 ###### templates/*
 Каталог шаблонов
 ***
@@ -21,6 +24,5 @@
 ***
 ###### views.py
 Контроллеры
-
 
 
