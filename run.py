@@ -1,6 +1,6 @@
 from wsgiref.simple_server import make_server
 from fringer_framework.main import Framework
-from urls import routes
+from views import routes
 
 # Создаем объект WSGI-приложения
 application = Framework(routes)
